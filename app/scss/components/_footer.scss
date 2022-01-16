@@ -1,0 +1,39 @@
+.footer {
+  padding: 60px 0 30px;
+  background-color: $purple;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: $yellow;
+    text-shadow: 3px 3px 1px $black;
+  }
+
+  &__address {
+    color: $white;
+    text-shadow: 3px 3px 1px $black;
+
+    p {
+      margin-bottom: 9px;
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    color: $yellow;
+  }
+
+  &__phone {
+    display: block;
+    padding: 11px 0;
+    margin-bottom: 9px;
+  }
+}

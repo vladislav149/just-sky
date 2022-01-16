@@ -1,0 +1,43 @@
+.header {
+  padding-bottom: 10px;
+
+  &__navigation {
+    @include w768 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include w768 {
+      display: none;
+    }
+  }
+
+  &__item {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__link {
+    padding: 10px 0;
+  }
+}

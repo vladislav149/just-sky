@@ -1,0 +1,81 @@
+.address {
+  display: flex;
+
+  @include w768 {
+    margin-right: 15px;
+  }
+
+  @include w576 {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  &--mobile {
+    flex-direction: column;
+  }
+
+  &__info {
+    padding: 20px 0 20px 22px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(101%) contrast(101%);
+    }
+
+    &--time {
+      @include w768 {
+        display: none;
+      }
+
+      &::before {
+        background-image: url(../../images/svg_sprite/sprite.svg#time);
+      }
+    }
+
+    &--address {
+      @include w768 {
+        display: none;
+      }
+
+      &::before {
+        background-image: url(../../images/svg_sprite/sprite.svg#location);
+      }
+    }
+
+    &--phone::before {
+      background-image: url(../../images/svg_sprite/sprite.svg#phone);
+    }
+
+    &--time::after {
+      content: "ежедневно";
+      position: absolute;
+      top: 7px;
+      font-size: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include w576 {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: block;
+      padding: 10px 0 10px 22px;
+      color: $white;
+      text-shadow: 2px 2px 2px $black;
+    }
+  }
+}

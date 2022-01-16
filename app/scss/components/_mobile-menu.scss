@@ -1,0 +1,45 @@
+.mobile-menu {
+  padding: 15px;
+  position: absolute;
+  border: 1px solid $black;
+  background-color: $purple;
+  width: 300px;
+  min-height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 140px;
+    object-fit: cover;
+  }
+
+  &__list {
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: $white;
+    text-shadow: 2px 2px 2px $black;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    padding: 10px 0;
+  }
+}

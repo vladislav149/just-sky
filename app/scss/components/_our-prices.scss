@@ -1,0 +1,25 @@
+.our-prices {
+  padding-top: 70px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    border-bottom: 1px solid $grey;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

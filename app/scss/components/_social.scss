@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+
+  &--header {
+    @include w576 {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    filter: invert(100%) sepia(27%) saturate(156%) hue-rotate(57deg) brightness(101%) contrast(93%);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 22px 0;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

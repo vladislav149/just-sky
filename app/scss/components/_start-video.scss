@@ -1,0 +1,38 @@
+.start-video {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 5px solid $purple;
+  border-radius: 50%;
+  box-shadow: 5px 6px 3px $black;
+  transition: background-color 0.3s;
+  animation-name: motion;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: rgba($yellow, 0.65);
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 0 solid transparent;
+    border-bottom-width: 27px;
+    border-top-width: 27px;
+    border-left: 51px solid $purple;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: rgba(#5a96ff, 0.85);
+  }
+}
+
+@keyframes motion {
+  0% {}
+
+  100% {
+    transform: scale(1.3);
+  }
+}

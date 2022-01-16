@@ -1,0 +1,12 @@
+.logo {
+  margin-right: 50px;
+
+  &__img {
+    width: 140px;
+    object-fit: cover;
+
+    @include w768 {
+      width: 90px;
+    }
+  }
+}
