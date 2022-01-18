@@ -45,8 +45,10 @@
     padding: 11px 0;
     margin-bottom: 9px;
 
-    &:hover {
-      transform: scale(1.02);
+    @include w768 {
+      &:hover {
+        transform: scale(1.02);
+      }
     }
   }
 }
