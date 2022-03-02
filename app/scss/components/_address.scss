@@ -40,7 +40,7 @@
       }
 
       &::before {
-        background-image: url(../../images/svg_sprite/sprite.svg#time);
+        background-image: url(images/svg_sprite/sprite.svg#time);
       }
     }
 
@@ -50,12 +50,12 @@
       }
 
       &::before {
-        background-image: url(../../images/svg_sprite/sprite.svg#location);
+        background-image: url(images/svg_sprite/sprite.svg#location);
       }
     }
 
     &--phone::before {
-      background-image: url(../../images/svg_sprite/sprite.svg#phone);
+      background-image: url(images/svg_sprite/sprite.svg#phone);
     }
 
     &--time::after {
