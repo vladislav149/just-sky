@@ -5,6 +5,14 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @include w768 {
+      flex-direction: column;
+    }
+  }
+
+  &__contacts {
+    margin-bottom: 20px;
   }
 
   &__title {
@@ -16,6 +24,7 @@
   &__address {
     color: $white;
     text-shadow: 3px 3px 1px $black;
+    width: fit-content;
 
     p {
       margin-bottom: 9px;
@@ -35,5 +44,11 @@
     display: block;
     padding: 11px 0;
     margin-bottom: 9px;
+
+    @include w768 {
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
   }
 }

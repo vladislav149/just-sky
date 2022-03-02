@@ -31,7 +31,6 @@
       width: 20px;
       height: 20px;
       left: 0;
-      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(101%) contrast(101%);
     }
 
     &--time {
@@ -66,7 +65,7 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include w576 {
+      @include w768 {
         display: none;
       }
     }
@@ -76,6 +75,10 @@
       padding: 10px 0 10px 22px;
       color: $white;
       text-shadow: 2px 2px 2px $black;
+
+      &::before {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(101%) contrast(101%);
+      }
     }
   }
 }

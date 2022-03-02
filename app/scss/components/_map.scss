@@ -1,6 +1,11 @@
 .map {
   width: 50%;
   height: 400px;
+
+  @include w768 {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 [class*="copyrights-pane"] {

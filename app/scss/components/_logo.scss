@@ -3,7 +3,8 @@
 
   &__img {
     width: 140px;
-    object-fit: cover;
+    height: 82px;
+    object-fit: contain;
 
     @include w768 {
       width: 90px;

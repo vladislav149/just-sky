@@ -4,9 +4,15 @@ $(function(){
   
   ymaps.ready(init);
   function init(){
+    let zoomMap;
+    if (window.matchMedia("(max-width: 576px)").matches) {
+      zoomMap = 16;
+    } else
+    zoomMap = 17;
+    
     let myMap = new ymaps.Map("map", {
       center: [43.03896870885594,44.6334173711635],
-      zoom: 17
+      zoom: zoomMap
     });
 
     let placemark = new ymaps.Placemark([43.0386539149548, 44.63097656095994], {}, {
