@@ -55,4 +55,9 @@ $(function () {
     $('.mobile-menu').removeClass('mobile-menu--active');
     $('body').removeClass('overlay');
   });
+
+  $('.mobile-menu__link').on('click', function () {
+    $('.mobile-menu').removeClass('mobile-menu--active');
+    $('body').removeClass('overlay');
+  });
 });
