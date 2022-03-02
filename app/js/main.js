@@ -18,7 +18,7 @@ $(function () {
 
     let placemark = new ymaps.Placemark([43.0386539149548, 44.63097656095994], {}, {
       iconLayout: 'default#image',
-      iconImageHref: '../images/icon/map-location.svg',
+      iconImageHref: 'images/icon/map-location.svg',
       iconImageSize: [60, 60],
       iconImageOffset: [-33, -60]
     })
