@@ -56,7 +56,7 @@ $(function () {
     $('body').removeClass('overlay');
   });
 
-  $('.mobile-menu__link').on('click', function () {
+  $('.mobile-menu__link, .address__info--address').on('click', function () {
     $('.mobile-menu').removeClass('mobile-menu--active');
     $('body').removeClass('overlay');
   });
